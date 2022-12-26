@@ -1,20 +1,10 @@
 import { useState } from "react"
-import styled from "styled-components"
 
 export const InputUrl = () => {
     const [inputValue, setInputValue] = useState("")
     const [shortenedLinks, setShortenedLinks] = useState([])
-    const InputContainer=styled.div`
-        padding:1rem;
-        background-color:purple;
-        display:flex;
-        justify-content:center;
-        gap:1rem;
-    `
-    const UrlInput=styled.input`
-        padding:.7rem;
     
-    `
+    
 
     const getShortLink=async()=>{
         
@@ -35,13 +25,15 @@ export const InputUrl = () => {
     }
 
     const onCopyLink=(link)=>{
-        navigator.clipboard.writeText(link)
+        navigator.clipboard.writeText(link);
+        
+
     }
   return (
     <>
         <a href="https://api.shrtco.de/v2/shorten?url=https://google.es//very/long/link.html">doc</a>
-        <InputContainer>
-            <UrlInput 
+        <div className="input-container">
+            <input 
                 type='text' 
                 placeholder="Shorten a link here..."
                 value={ inputValue }
@@ -53,7 +45,7 @@ export const InputUrl = () => {
                 Shorten It!
             </button>
             
-        </InputContainer>
+        </div>
             {
                 (shortenedLinks.length>0) ? shortenedLinks.map(link=>{
                     return <>
