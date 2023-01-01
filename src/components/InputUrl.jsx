@@ -46,9 +46,11 @@ export const InputUrl = () => {
             </button>
             
         </div>
-            {
+        <div className="item-cont">
+             {
                 (shortenedLinks.length>0) ? shortenedLinks.map(link=>{
                     return <>
+                    
                     <h4>{link}</h4>
                     <button
                         onClick={onCopyLink(link)}
@@ -57,6 +59,8 @@ export const InputUrl = () => {
                 }) : <h1>No links</h1>
             }
         
+        </div>
+           
         
     </>
   )

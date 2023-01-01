@@ -67,3 +67,27 @@ ul{
   height:20rem;
   background-color:#ff0000;
 }
+.item-cont{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.sign-up-btn{
+  padding: 1rem;
+  background-color: aqua;
+  border: 0;
+  color: #fff;
+  border-radius: 25%;
+}
+.login-btn{
+  background-color: transparent;
+  color: #9B9A9F;
+  font-weight: 600;
+  border: none;
+}
+.header-cont{
+  display: flex;
+  flex-direction: row;
+}
