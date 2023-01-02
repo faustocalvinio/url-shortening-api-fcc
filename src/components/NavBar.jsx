@@ -6,7 +6,7 @@ export const NavBar = () => {
 
     <>
         <nav>
-            <ul>
+            <ul className="li-navigation-container">
                 <li>shortly</li>
                 <li>features</li>
                 <li>pricing</li>

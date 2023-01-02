@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import bgInput from '../images/bg-shorten-desktop.svg'
 export const InputUrl = () => {
     const [inputValue, setInputValue] = useState("")
     const [shortenedLinks, setShortenedLinks] = useState([])
@@ -32,8 +32,9 @@ export const InputUrl = () => {
   return (
     <>
         <a href="https://api.shrtco.de/v2/shorten?url=https://google.es//very/long/link.html">doc</a>
-        <div className="input-container">
+        <div className="input-container" style={{background:"url(bgInput)"}}>
             <input 
+                className="url-input"
                 type='text' 
                 placeholder="Shorten a link here..."
                 value={ inputValue }

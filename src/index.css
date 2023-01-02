@@ -34,7 +34,6 @@ body {
 }
 .input-container{
   padding:1rem;
-  background-color:purple;
   display:flex;
   justify-content:center;
   gap:1rem;
@@ -83,11 +82,34 @@ ul{
 }
 .login-btn{
   background-color: transparent;
-  color: #9B9A9F;
+  color: #A4A3AB;
   font-weight: 600;
   border: none;
 }
 .header-cont{
   display: flex;
   flex-direction: row;
+}
+.advantages-cont{
+  display: flex;
+  flex-direction: row;
+  /* gap: 2rem; */
+  justify-content: space-between;
+  align-items: center;
+}
+.url-input{
+  padding: 1rem;
+  border: 3px solid #ff0000;
+}
+.li-navigation-container{
+  align-items: center;
+  color:#A4A3AB;
+  cursor: pointer;
+}
+.li-navigation-container li:hover{
+  color: #000;
+}
+.header-text-cont h1{
+  font-size: 10rem;
+  height: fit-content;
 }
